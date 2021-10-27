@@ -13,6 +13,15 @@
 		157F2CD327276DBF00457FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157F2CD127276DBF00457FED /* Main.storyboard */; };
 		157F2CD527276DC000457FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157F2CD427276DC000457FED /* Assets.xcassets */; };
 		157F2CD827276DC000457FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157F2CD627276DC000457FED /* LaunchScreen.storyboard */; };
+		15851EC727284AC5003EB220 /* ManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15851EC627284AC5003EB220 /* ManagerViewController.swift */; };
+		15851ECA27284B0C003EB220 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15851EC927284B0C003EB220 /* HistoryTableViewController.swift */; };
+		15851ECD27284B68003EB220 /* RestockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15851ECC27284B68003EB220 /* RestockViewController.swift */; };
+		15851ED027284BA7003EB220 /* ItemHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15851ECF27284BA7003EB220 /* ItemHistoryViewController.swift */; };
+		15851ED427284BD7003EB220 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15851ED327284BD7003EB220 /* Item.swift */; };
+		15851ED827284BF9003EB220 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15851ED727284BF9003EB220 /* Manager.swift */; };
+		15851EDB27284C1C003EB220 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15851EDA27284C1C003EB220 /* History.swift */; };
+		15851EDF27284C67003EB220 /* myCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15851EDE27284C67003EB220 /* myCustomButton.swift */; };
+		15851EE227284C90003EB220 /* myCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15851EE127284C90003EB220 /* myCustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		157F2CD427276DC000457FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157F2CD727276DC000457FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		157F2CD927276DC000457FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15851EC627284AC5003EB220 /* ManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerViewController.swift; sourceTree = "<group>"; };
+		15851EC927284B0C003EB220 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		15851ECC27284B68003EB220 /* RestockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestockViewController.swift; sourceTree = "<group>"; };
+		15851ECF27284BA7003EB220 /* ItemHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHistoryViewController.swift; sourceTree = "<group>"; };
+		15851ED327284BD7003EB220 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		15851ED727284BF9003EB220 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		15851EDA27284C1C003EB220 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		15851EDE27284C67003EB220 /* myCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCustomButton.swift; sourceTree = "<group>"; };
+		15851EE127284C90003EB220 /* myCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +76,46 @@
 			children = (
 				157F2CCB27276DBF00457FED /* AppDelegate.swift */,
 				157F2CCD27276DBF00457FED /* SceneDelegate.swift */,
-				157F2CCF27276DBF00457FED /* ViewController.swift */,
+				15851EDD27284C42003EB220 /* View */,
+				15851ED227284BC5003EB220 /* Model */,
+				15851EC5272849EB003EB220 /* Controller */,
 				157F2CD127276DBF00457FED /* Main.storyboard */,
 				157F2CD427276DC000457FED /* Assets.xcassets */,
 				157F2CD627276DC000457FED /* LaunchScreen.storyboard */,
 				157F2CD927276DC000457FED /* Info.plist */,
 			);
 			path = Assignment2;
+			sourceTree = "<group>";
+		};
+		15851EC5272849EB003EB220 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				157F2CCF27276DBF00457FED /* ViewController.swift */,
+				15851EC627284AC5003EB220 /* ManagerViewController.swift */,
+				15851EC927284B0C003EB220 /* HistoryTableViewController.swift */,
+				15851ECC27284B68003EB220 /* RestockViewController.swift */,
+				15851ECF27284BA7003EB220 /* ItemHistoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		15851ED227284BC5003EB220 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15851ED327284BD7003EB220 /* Item.swift */,
+				15851ED727284BF9003EB220 /* Manager.swift */,
+				15851EDA27284C1C003EB220 /* History.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15851EDD27284C42003EB220 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15851EDE27284C67003EB220 /* myCustomButton.swift */,
+				15851EE127284C90003EB220 /* myCustomTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +188,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15851EDB27284C1C003EB220 /* History.swift in Sources */,
+				15851EC727284AC5003EB220 /* ManagerViewController.swift in Sources */,
 				157F2CD027276DBF00457FED /* ViewController.swift in Sources */,
+				15851ECD27284B68003EB220 /* RestockViewController.swift in Sources */,
+				15851ED027284BA7003EB220 /* ItemHistoryViewController.swift in Sources */,
+				15851EDF27284C67003EB220 /* myCustomButton.swift in Sources */,
+				15851ED427284BD7003EB220 /* Item.swift in Sources */,
 				157F2CCC27276DBF00457FED /* AppDelegate.swift in Sources */,
 				157F2CCE27276DBF00457FED /* SceneDelegate.swift in Sources */,
+				15851ED827284BF9003EB220 /* Manager.swift in Sources */,
+				15851EE227284C90003EB220 /* myCustomTableViewCell.swift in Sources */,
+				15851ECA27284B0C003EB220 /* HistoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
